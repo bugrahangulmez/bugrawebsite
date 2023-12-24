@@ -1,58 +1,73 @@
+import image1 from "../../assets/images/image1.jpg"
+import image2 from "../../assets/images/image2.jpg"
+import image3 from "../../assets/images/image3.jpg"
+import image4 from "../../assets/images/image4.jpg"
+import image5 from "../../assets/images/image5.jpg"
+import image6 from "../../assets/images/image6.jpg"
+import image7 from "../../assets/images/image7.jpg"
+import image8 from "../../assets/images/image8.jpg"
+import image9 from "../../assets/images/image9.jpg"
+import image10 from "../../assets/images/image10.jpg"
+import image11 from "../../assets/images/image11.jpg"
+import image12 from "../../assets/images/image12.jpg"
+import image13 from "../../assets/images/image13.jpg"
+import image14 from "../../assets/images/image14.jpg"
+
 export default [
   {
-    css: "https://images.pexels.com/photos/416430/pexels-photo-416430.jpeg",
+    css: image14,
     height: 150,
   },
   {
-    css: "https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg",
+    css: image3,
     height: 300,
   },
   {
-    css: "https://images.pexels.com/photos/911738/pexels-photo-911738.jpeg",
+    css: image1,
     height: 300,
   },
   {
-    css: "https://images.pexels.com/photos/358574/pexels-photo-358574.jpeg",
+    css: image2,
     height: 300,
   },
   {
-    css: "https://images.pexels.com/photos/1738986/pexels-photo-1738986.jpeg",
+    css: image4,
     height: 300,
   },
   {
-    css: "https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg",
+    css: image5,
     height: 300,
   },
   {
-    css: "https://images.pexels.com/photos/1005644/pexels-photo-1005644.jpeg",
+    css: image6,
     height: 200,
   },
   {
-    css: "https://images.pexels.com/photos/227675/pexels-photo-227675.jpeg",
+    css: image7,
     height: 300,
   },
   {
-    css: "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg",
+    css: image8,
     height: 200,
   },
   {
-    css: "https://images.pexels.com/photos/327482/pexels-photo-327482.jpeg",
+    css: image9,
     height: 400,
   },
   {
-    css: "https://images.pexels.com/photos/2736834/pexels-photo-2736834.jpeg",
+    css: image10,
     height: 200,
   },
   {
-    css: "https://images.pexels.com/photos/249074/pexels-photo-249074.jpeg",
+    css: image11,
     height: 150,
   },
   {
-    css: "https://images.pexels.com/photos/310452/pexels-photo-310452.jpeg",
+    css: image12,
     height: 400,
   },
   {
-    css: "https://images.pexels.com/photos/380337/pexels-photo-380337.jpeg",
+    css: image13,
     height: 200,
   },
-];
+]

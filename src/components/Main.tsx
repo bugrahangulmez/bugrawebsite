@@ -1,3 +1,4 @@
+import { Projects } from "."
 import { ImagesAnim, OnboardingAnim, TextAnim } from "../animations"
 
 function Main() {
@@ -14,6 +15,9 @@ function Main() {
       </div>
       <div className="w-screen justify-center items-center py-[5vh] h-screen bg-text1">
         <OnboardingAnim />
+      </div>
+      <div className="w-screen justify-center items-center py-[5vh] h-screen bg-white">
+        <Projects />
       </div>
     </div>
   )
