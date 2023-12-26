@@ -1,11 +1,11 @@
-import React, { useState, useCallback, useRef, useEffect } from "react";
-import { useTransition, animated } from "@react-spring/web";
+import { useState, useCallback, useRef, useEffect } from "react"
+import { useTransition, animated } from "@react-spring/web"
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.css"
 
 export default function OnboardingAnim() {
-  const ref = useRef<ReturnType<typeof setTimeout>[]>([]);
-  const [items, set] = useState<string[]>([]);
+  const ref = useRef<ReturnType<typeof setTimeout>[]>([])
+  const [items, set] = useState<string[]>([])
   const transitions = useTransition(items, {
     from: {
       opacity: 0,
@@ -25,23 +25,25 @@ export default function OnboardingAnim() {
       { opacity: 0, height: 0 },
     ],
     update: { color: "#7743DB" },
-  });
+  })
 
   const reset = useCallback(() => {
-    ref.current.forEach(clearTimeout);
-    ref.current = [];
-    set([]);
+    ref.current.forEach(clearTimeout)
+    ref.current = []
+    set([])
     ref.current.push(
       setTimeout(() => set(["Mobile", "App", "Developer"]), 2000)
-    );
-    ref.current.push(setTimeout(() => set(["Anytime", "Anywhere"]), 5000));
-    ref.current.push(setTimeout(() => set(["With", "React", "Native"]), 8000));
-  }, []);
+    )
+    ref.current.push(setTimeout(() => set(["Anytime", "Anywhere"]), 5000))
+    ref.current.push(setTimeout(() => set(["With", "React", "Native"]), 8000))
+  }, [])
 
   useEffect(() => {
-    reset();
-    return () => ref.current.forEach(clearTimeout);
-  }, []);
+    reset()
+    setInterval(() => {
+      reset()
+    }, 10000)
+  }, [])
 
   return (
     <div className={styles.container}>
@@ -59,5 +61,5 @@ export default function OnboardingAnim() {
         ))}
       </div>
     </div>
-  );
+  )
 }

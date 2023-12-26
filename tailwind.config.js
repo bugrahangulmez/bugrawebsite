@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        headerBugra: "#AB88F7",
-        bg1: "#FFFBF5",
-        text1: "#C3ACD0",
+        headerBugra: "#163020",
+        bg1: "#EEF0E5",
+        text1: "#304D30",
       },
     },
   },
   plugins: [],
-};
+}

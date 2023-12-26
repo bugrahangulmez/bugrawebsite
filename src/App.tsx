@@ -1,6 +1,6 @@
 import { Footer, Header, Main } from "./components"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { ProjectsPage } from "./pages"
+import { AboutPage, BlogPage, ContactPage, ProjectsPage } from "./pages"
 
 function Root() {
   return (
@@ -21,6 +21,18 @@ function App() {
     {
       path: "/projects",
       element: <ProjectsPage />,
+    },
+    {
+      path: "/about",
+      element: <AboutPage />,
+    },
+    {
+      path: "/blog",
+      element: <BlogPage />,
+    },
+    {
+      path: "/contact",
+      element: <ContactPage />,
     },
   ])
   return <RouterProvider router={router} />
